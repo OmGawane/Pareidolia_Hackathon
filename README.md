@@ -1,4 +1,4 @@
-# Lunar Pareidolia Detection & Classification (`Pareidolia 2.0`)
+# Lunar Pareidolia Detection & Classification 
 
 A robust, high-performance machine learning pipeline designed to detect and classify lunar pareidolia. This approach uniquely combines **physics-informed Shape-from-Shading (SfS)** priors, advanced hand-crafted topographical descriptors, **self-supervised Vision Transformer embeddings (DINOv2)**, and an optimized **Stacking Ensemble**.
 
