@@ -32,3 +32,22 @@ Pareidolia 2.0/
 ├── optimal_threshold.pkl          # Tuned classification decision threshold
 ├── dino.py                        # Main script for model training and weight saving
 └── sub.py                         # Script for generating test submissions
+
+Installation & Prerequisites
+Ensure you have Python 3.8+ installed along with a CUDA-compatible GPU for accelerated DINOv2 embedding extraction.
+
+Install the required dependencies using pip:
+
+Bash
+pip install torch torchvision opencv-python scikit-image scikit-learn xgboost pandas numpy pillow scipy joblib openpyxl
+Usage Guide
+1. Train the Model & Save Weights (dino.py)
+To train the model from scratch, extract features, fit the DINOv2 PCA projection, train the stacking ensemble, and serialize the model artifacts (final_model_weights.pkl and optimal_threshold.pkl) into your base directory, run:
+
+Bash
+python dino.py
+2. Generate Test Submissions (sub.py)
+To run inference on the test set using your saved model weights alongside azimuth-aware bicubic rotation, execute:
+
+Bash
+python sub.py
